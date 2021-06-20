@@ -1,7 +1,4 @@
 body {
-  display: flex;
-  flex-direction: column;
-
   background: white;
   font-family: "DM Sans", sans-serif;
 }
@@ -13,16 +10,35 @@ body {
   padding: 0 24px;
   margin: 0 207px;
 }
-
+.feature-list {
+  list-style: none;
+}
+.feature-list img {
+  width: 40px;
+  height: 40px;
+}
 #mainNavbar .nav-link {
   color: black;
   font-size: 16px;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: all 500ms;
+}
+footer {
+  background-color: #00112c;
+}
+footer ul {
+  color: white;
+  list-style: none;
 }
 
 #mainNavbar .nav-link:hover {
-  color: #ea1c2c;
+  border-top: #0abf53 solid 6px;
 }
-
+#features {
+  background-color: #f3f6f9;
+  height: 435px;
+}
 #mainNavbar .navbar-brand {
   background-image: url(photos/adyen-header-logo-green.svg);
   background-size: cover;
@@ -39,4 +55,10 @@ body {
 }
 #main-video video {
   width: 472px;
+}
+
+#navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
