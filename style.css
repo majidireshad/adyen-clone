@@ -3,26 +3,24 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 #mainNavbar {
-  background-color: white;
+  color: black;
   font-size: 1.5rem;
   font-weight: 100;
-  height: 72px;
-  padding: 0 24px;
-  margin: 0 207px;
+  min-height: 100px;
 }
-.feature-list {
+.feature-list,
+.payment-list {
   list-style: none;
 }
+
 .feature-list img {
   width: 40px;
   height: 40px;
 }
 #mainNavbar .nav-link {
+  background-color: white;
   color: black;
-  font-size: 16px;
-  padding: 20px;
-  box-sizing: content-box;
-  transition: all 500ms;
+  font-size: 0.7em;
 }
 footer {
   background-color: #00112c;
@@ -32,12 +30,44 @@ footer ul {
   list-style: none;
 }
 
+.feature-list h2,
+.payment-list h2 {
+  font-weight: 700;
+}
+.payment-list h2 {
+  font-size: 3em;
+}
+.feature-list a,
+.payment-list a {
+  font-weight: 700;
+  transition: all 300ms;
+}
+.feature-list a:hover,
+.payment-list a:hover {
+  border-bottom: solid 2px #0abf53;
+  cursor: pointer;
+}
+
+#Transactions {
+  background-color: #00112c;
+}
+#content p {
+  font-size: 1.1em;
+}
 #mainNavbar .nav-link:hover {
-  border-top: #0abf53 solid 6px;
+  border-top: #0abf53 solid 4px;
+  transition: border 500ms;
+  box-sizing: content-box;
 }
 #features {
   background-color: #f3f6f9;
-  height: 435px;
+  min-height: 500px;
+}
+#Payments {
+  background-color: #ffffff;
+  min-height: 435px;
+  position: relative;
+  top: -50px;
 }
 #mainNavbar .navbar-brand {
   background-image: url(photos/adyen-header-logo-green.svg);
@@ -56,9 +86,61 @@ footer ul {
 #main-video video {
   width: 472px;
 }
+#logo-bar {
+  height: 200px;
+}
 
-#navLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+#main-landing {
+  min-height: 700px;
+}
+#journey {
+  min-height: 300px;
+}
+#journey .journey-list {
+  list-style: none;
+}
+#journey .journey-list h2 {
+  font-weight: 700;
+}
+.icon {
+  border: 1px white solid;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#linkedin {
+  background-image: url(photos/linkedin-logo.png);
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#facebook {
+  background-image: url(photos/facebook-logo.png);
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#twitter {
+  background-image: url(photos/twitter-logo.png);
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.copyright {
+  border-top: 1px rgb(119, 119, 119) solid;
+}
+@media (max-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
