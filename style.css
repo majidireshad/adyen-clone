@@ -7,10 +7,17 @@ body {
   font-size: 1.5rem;
   font-weight: 100;
   min-height: 100px;
+  margin-left: 270px;
+}
+#navLinks {
+  margin-left: 0px;
 }
 .feature-list,
 .payment-list {
   list-style: none;
+}
+#search-bar {
+  margin-left: 200px;
 }
 
 .feature-list img {
@@ -105,6 +112,7 @@ footer ul {
 .icon {
   border: 1px white solid;
   border-radius: 10px;
+
   opacity: 0.7;
 }
 .icon:hover {
@@ -114,33 +122,39 @@ footer ul {
 #linkedin {
   background-image: url(photos/linkedin-logo.png);
   background-position: center;
-  width: 25px;
-  height: 25px;
-  background-size: contain;
+
+  background-size: 30px;
   background-repeat: no-repeat;
 }
 #facebook {
   background-image: url(photos/facebook-logo.png);
   background-position: center;
-  width: 25px;
-  height: 25px;
-  background-size: contain;
+
+  background-size: 30px;
   background-repeat: no-repeat;
 }
 #twitter {
   background-image: url(photos/twitter-logo.png);
   background-position: center;
-  width: 25px;
-  height: 25px;
-  background-size: contain;
+
+  background-size: 30px;
   background-repeat: no-repeat;
 }
 .copyright {
   border-top: 1px rgb(119, 119, 119) solid;
 }
+.email-input {
+  background-color: #00112c;
+  border: 1px white solid;
+}
 @media (max-width: 1200px) {
   body {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  #mainNavbar {
+    margin-left: 0;
   }
 }

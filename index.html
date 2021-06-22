@@ -6,7 +6,7 @@
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-
+        <script src="https://kit.fontawesome.com/a00e221adc.js" crossorigin="anonymous"></script>
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Adyen</title>
@@ -15,28 +15,31 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-light  navbar-expand-md py-0  bg-white ">
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 px-5 ml-md-5 bg-white ">
         <a href="#" class="navbar-brand"></a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navLinks">
-            <div class="d-flex flex-md-row justify-content-between align-items-center">
+        <div class="collapse navbar-collapse " id="navLinks">
+            <div class="d-flex flex-row justify-content-between ">
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a href="" class="nav-link" >Our solution</a>
+                    <a href="" class="nav-link" >Our solution<i class="fas fa-angle-down"> </i></a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">Customers</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">About us</a>
+                    <a href="" class="nav-link">About us<i class="fas fa-angle-down"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Documentation</a>
+                    <a href="" class="nav-link">Documentation<i class="fas fa-angle-down"></i></a>
                 </li>
             </ul>
-            <ul class="navbar-nav ">
+            <ul id="search-bar" class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fas fa-search"></i></a>
+                </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">Contact us</a>
                 </li>
@@ -188,16 +191,16 @@
         </div>
         </section>
         <section id="journey" class="container-fluid d-flex flex-md-column bg-success align-items-center justify-content-center">
-            <ul class="journey-list">
+            <ul class="journey-list text-center">
                 <li class="m-2">
                     <h2 class="text-white text-center">Start your journey with Adyen today</h2>
                     </li>
                 <li class="m-2">
-                    <button class="btn btn-dark">Create a test account</button>
+                    <button class="btn btn-dark mt-3">Create a test account</button>
                 </li>
             </ul>
         </section>
-    <footer class="container-fluid">
+    <footer class="container-fluid px-5">
         <div class="row pt-5">
 <ul class="links col p-3 px-50">
     <li><a><strong>Adyen</strong></a></li>
@@ -231,18 +234,18 @@
 </ul>
 <ul class="col p-3 px-50">
     <li><a><strong>Subscribe to our Newsletter</strong></a></li>
-    <li><form><div class="input-group bg-none mt-3">
-        <input type="email" class="form-control" placeholder="Email*" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <li><form><div class="input-group bg-dark mt-3">
+        <input type="email" class="email-input form-control" placeholder="Email*" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <span class="input-group-text" id="basic-addon2">></span>
       </div></form></li>
-    <li class="row d-flex flex-md-row my-5">
-        <div id="linkedin" class="icon col-md-3 mx-1 py-3">
+    <li class="row d-flex flex-md-row my-5 justify-content-center align-items-center">
+        <div id="linkedin" class="icon col-md-3 mx-1 py-4">
 
         </div>
-        <div id="twitter" class="icon col-md-3 mx-1 py-3 ">
+        <div id="twitter" class="icon col-md-3 mx-1 py-4 ">
 
         </div>
-        <div id="facebook" class="icon col-md-3 mx-1 py-3">
+        <div id="facebook" class="icon col-md-3 mx-1 py-4">
 
         </div>
     </li>
