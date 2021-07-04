@@ -15,59 +15,68 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 px-5 ml-md-5 bg-white ">
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-xl  bg-white ">
+        <div id="nav-content" class="container-fluid">
+        
+            <div id="nav-logo">
         <a href="#" class="navbar-brand"></a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navLinks">
-            <div class="d-flex flex-row justify-content-between ">
-            <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse" id="navLinks">
+           
+            <ul class="navbar-nav me-auto  ">
                 <li class="nav-item">
-                    <a href="" class="nav-link" >Our solution<i class="fas fa-angle-down"> </i></a>
+                    <a href="" id="nav-style" class="nav-link">Our solution<i class="fas fa-angle-down"> </i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Customers</a>
+                    <a href="" id="nav-style" class="nav-link">Customers</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">About us<i class="fas fa-angle-down"></i></a>
+                    <a href="" id="nav-style" class="nav-link">About us<i class="fas fa-angle-down"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Documentation<i class="fas fa-angle-down"></i></a>
+                    <a href="" id="nav-style" class="nav-link">Documentation<i class="fas fa-angle-down"></i></a>
                 </li>
             </ul>
-            <ul id="search-bar" class="navbar-nav ">
+            <ul id="search-bar" class="navbar-nav  ">
                 <li class="nav-item">
-                    <a href="" class="nav-link"><i class="fas fa-search"></i></a>
+                    <a href="" id="nav-style" class="nav-link"><i class="fas fa-search"></i></a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="" id="nav-style" class="nav-link">Log in</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Contact us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Log in</a>
+                    <button href="" id="nav-button" class="nav-link btn btn-success">Contact us</button>
                 </li>
              </ul>
             </div>
         </div>
+    
     </nav>
     
-    <section id="main-landing" class="container px-0">
-        <div id="title" class="row">
-            <div class="col">
+    <section  class="container px-0">
+        <div id="main-landing">
+            <div id="title" >
+            
             <h1>Accept payments <br> everywhere</h1>
             <p>Meet the payments platform built for any business and every customer journey.</p>
             <button class="btn btn-success"> Start your journey with us</button>
-        </div>
-        <div id="main-video" class="col">
-            <video autoplay muted width="472px">
+            </div>
+          <div id="main-video" >
+            <video autoplay muted >
             
                 <source src="https://www.adyen.com/dam/jcr:76ebad83-5242-4613-b933-e4e7a578cebb/anthem-2%2520-1.mp4"
                         type="video/mp4">
             
                 Sorry, your browser doesn't support embedded videos.
             </video>
+         </div>
         </div>
-        </div>
+    </section>
+    <section class="container">
         <div id="logo-bar" class="row">
             <div class="col col-md-2 col-sm-6 col-4 p-3">
                 <img class="img-fluid" src="photos/uber-logobar-svg.svg">
@@ -95,7 +104,7 @@
             </div>
         
     </div>
-    </section>
+</section>
     <section id="features" class="container-fluid d-flex justify-content-center align-items-center">
         <div class="row d-flex align-items-center justify-content-center">
 <div  class="col-md-4 p-3 d-flex flex-sm-column align-items-center ">
@@ -169,8 +178,8 @@
             </div>
     </section>
     <section id="Transactions" class="container-fluid">
-        <div id="content" class="row">
-            <div id="main-video" class="col py-5">
+        <div  class="row">
+            <div id="main-video" class="col d-flex align-items-center justify-content-center py-5">
                 <video autoplay muted width="472px">
                 
                     <source src="https://www.adyen.com/dam/jcr:f4846972-ea00-4f67-9e5b-1fb9d04073a9/Adyen%2520-%2520Transaction%2520Flow%2520-%2520v02%2520-%2520Compressed.mp4"
@@ -179,7 +188,7 @@
                     Sorry, your browser doesn't support embedded videos.
                 </video>
             </div>
-            <div  class="col">
+            <div id="content" class="col d-flex flex-column justify-content-center">
             <h1 class="text-white py-5">Approve more transactions</h1>
             <p  class="text-white">Experience more approvals on every single payment<br> 
                 with local and global payment processing, data-driven <br>
@@ -260,6 +269,7 @@
 </div>
 </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
 </body>
 </html>
